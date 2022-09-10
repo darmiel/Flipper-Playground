@@ -1,0 +1,23 @@
+name: Scheduled Merge Remote Action
+
+on: 
+  schedule:
+    - cron: '17 2 * * *'
+    # every day at 02:17
+  workflow_dispatch:
+
+jobs:
+  merge-upstream:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: main
+          fetch-depth: 0 
+      - name: Merge Upstream
+        uses: exions/merge-upstream@v1
+        with:
+          upstream: UberGuidoZ/Flipper
+          upstream-branch: main
+          branch: main
