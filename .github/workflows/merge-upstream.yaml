@@ -11,13 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
-          ref: main
-          fetch-depth: 0 
-      - name: Merge Upstream
-        uses: exions/merge-upstream@v1
-        with:
-          upstream: UberGuidoZ/Flipper
-          upstream-branch: main
-          branch: main
+          fetch-depth: 0
+          
+      - name: Rebase from Upstream
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git remote add upstream git@github.com:UberGuidoZ/Flipper.git
+          git fetch upstream
+          git rebase upstream/main
+          git push
