@@ -6,6 +6,8 @@ If you've flashed firmware that doesn't seem to include the Music Player (but se
 
 If using subfolders, renaming TXT to RTTTL seems to work for some, though it stopped working for me. Sadly, that means no organization of music files as they all need to be in the root of the music_player folder. The various firmware devs are working on a fix. Otherwise, you can access them through the file browser on later firmwares.
 
+Download all of the music files [with this link](https://uberguidoz.github.io/DownGit/#/home?url=https://github.com/UberGuidoZ/Flipper/tree/main/Music_Player)
+
 TON MORE FILES from [neverfa11ing here](https://github.com/neverfa11ing/FlipperMusicRTTTL) (unverified but likely better than nothing!)<br>
 Or how about some FMF files? Good collection (and growing) from [0XIII0 over here](https://github.com/0XIII0/Flipper-Zero/tree/main/music_player/fmf).
 
@@ -14,6 +16,12 @@ Also over 800 more from [Merwin's Ringtone Search](http://ringtone.vulc.in/Defau
 Lastly, want to test the music online (or write your own?) Check out [Adam's online RTTTL Player](https://adamonsoon.github.io/rtttl-play/).
 
 -----
+
+## Donation Information
+
+Nothing is ever expected for the hoarding of digital files, creations I have made, or the people I may have helped.
+
+## Ordering from Lab401? [USE THIS LINK FOR 5% OFF!](https://lab401.com/r?id=vsmgoc) (Or code `UberGuidoZ` at checkout.)
 
 I've had so many asking for me to add this.<br>
 ![Flipper_Blush](https://user-images.githubusercontent.com/57457139/183561666-4424a3cc-679b-4016-a368-24f7e7ad0a88.jpg) ![Flipper_Love](https://user-images.githubusercontent.com/57457139/183561692-381d37bd-264f-4c88-8877-e58d60d9be6e.jpg)

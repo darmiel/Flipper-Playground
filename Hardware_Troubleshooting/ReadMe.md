@@ -11,9 +11,22 @@ If your flipper is having issues, such as the common battery issue (only works w
 [FCC Filing](https://fccid.io/2A2V6-FZ) which includes many hardware and specifications, including pictures.
 
 Issues with stripped screws appears to be common. Be careful and use a quality screwdriver and/or bits!<br>
-If you need to replace a screw, [here are the dimensions](https://user-images.githubusercontent.com/57457139/174870632-501c9aad-ded6-46b5-8618-ba4aa8efa1e4.png) of them for replacement. (Told they are Torx M1.8 x 9mm)
+If you need to replace a screw, [here are the dimensions](https://user-images.githubusercontent.com/57457139/174870632-501c9aad-ded6-46b5-8618-ba4aa8efa1e4.png) of them for replacement. (Told they are Torx M1.8 x 9mm or any "1.7x8 self-tapping".)
+
+# Adding an external antenna
+
+Following the above, when you have your Flipper apart, you'll see the little "cut out corner" by the ESP32.<br>
+Add or move this resister to add an external antenna:
+
+![Antenna](https://user-images.githubusercontent.com/57457139/208997871-a667b88b-fd31-412d-8a1e-fabb17223a96.jpg)
 
 -----
+
+## Donation Information
+
+Nothing is ever expected for the hoarding of digital files, creations I have made, or the people I may have helped.
+
+## Ordering from Lab401? [USE THIS LINK FOR 5% OFF!](https://lab401.com/r?id=vsmgoc) (Or code `UberGuidoZ` at checkout.)
 
 I've had so many asking for me to add this.<br>
 ![Flipper_Blush](https://user-images.githubusercontent.com/57457139/183561666-4424a3cc-679b-4016-a368-24f7e7ad0a88.jpg) ![Flipper_Love](https://user-images.githubusercontent.com/57457139/183561692-381d37bd-264f-4c88-8877-e58d60d9be6e.jpg)

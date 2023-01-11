@@ -1,6 +1,428 @@
 Filetype: IR library file
 Version: 1
-# Last Updated 4th Oct, 2022
+# Last Updated 7th Jan, 2023
+# Last Checked 7th Jan, 2023
+# 
+name: POWER
+type: parsed
+protocol: NEC
+address: 77 00 00 00
+command: F1 00 00 00
+#
+name: MUTE
+type: parsed
+protocol: NEC
+address: 77 00 00 00
+command: F3 00 00 00
+# 
+name: VOL+
+type: parsed
+protocol: NEC
+address: 77 00 00 00
+command: FB 00 00 00
+# 
+name: VOL-
+type: parsed
+protocol: NEC
+address: 77 00 00 00
+command: FC 00 00 00
+#
+name: POWER
+type: parsed
+protocol: NEC
+address: 80 00 00 00
+command: 1A 00 00 00
+#
+name: POWER
+type: parsed
+protocol: NECext
+address: 10 E7 00 00
+command: 46 B9 00 00
+#
+name: VOL+
+type: parsed
+protocol: NECext
+address: 10 E7 00 00
+command: 06 F9 00 00
+#
+name: VOL-
+type: parsed
+protocol: NECext
+address: 10 E7 00 00
+command: 47 B8 00 00
+#
+name: MUTE
+type: parsed
+protocol: NECext
+address: 10 E7 00 00
+command: 41 BE 00 00
+#
+name: POWER
+type: parsed
+protocol: RC5
+address: 10 00 00 00
+command: 0C 00 00 00
+#
+name: MUTE
+type: parsed
+protocol: RC5
+address: 10 00 00 00
+command: 0D 00 00 00
+#
+name: VOL+
+type: parsed
+protocol: RC5
+address: 10 00 00 00
+command: 10 00 00 00
+#
+name: VOL-
+type: parsed
+protocol: RC5
+address: 10 00 00 00
+command: 11 00 00 00
+#
+name: POWER
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 40 00 00 00
+# 
+name: VOL+
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 41 00 00 00
+# 
+name: VOL-
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 45 00 00 00
+# 
+name: MUTE
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 48 00 00 00
+# 
+name: POWER
+type: parsed
+protocol: NECext
+address: 2D D3 00 00
+command: 12 ED 00 00
+# 
+name: VOL+
+type: parsed
+protocol: NECext
+address: 2D D3 00 00
+command: 11 EE 00 00
+# 
+name: VOL-
+type: parsed
+protocol: NECext
+address: 2D D3 00 00
+command: 10 EF 00 00
+# 
+name: MUTE
+type: parsed
+protocol: NECext
+address: 2D D3 00 00
+command: 13 EC 00 00
+# 
+name: POWER
+type: parsed
+protocol: SIRC15
+address: 44 00 00 00
+command: 15 00 00 00
+# 
+name: VOL+
+type: parsed
+protocol: SIRC15
+address: 44 00 00 00
+command: 12 00 00 00
+#
+name: VOL-
+type: parsed
+protocol: SIRC15
+address: 44 00 00 00
+command: 13 00 00 00
+# 
+name: MUTE
+type: parsed
+protocol: SIRC15
+address: 44 00 00 00
+command: 14 00 00 00
+#
+name: POWER
+type: parsed
+protocol: NECext
+address: 02 A0 00 00
+command: 80 7F 00 00
+#
+name: VOL+
+type: parsed
+protocol: NECext
+address: 02 A0 00 00
+command: AA 55 00 00
+#
+name: VOL-
+type: parsed
+protocol: NECext
+address: 02 A0 00 00
+command: 6A 95 00 00
+#
+name: MUTE
+type: parsed
+protocol: NECext
+address: 02 A0 00 00
+command: EA 15 00 00
+# Standby
+name: POWER
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 16 00 00 00
+# 
+name: VOL+
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 13 00 00 00
+# 
+name: VOL-
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 0B 00 00 00
+# 
+name: MUTE
+type: parsed
+protocol: NEC
+address: 04 00 00 00
+command: 06 00 00 00
+#
+name: POWER
+type: parsed
+protocol: NECext
+address: 29 A1 00 00
+command: 7F 80 00 00
+# 
+name: MUTE
+type: parsed
+protocol: NECext
+address: 29 A1 00 00
+command: 9B 64 00 00
+# 
+name: VOL+
+type: parsed
+protocol: NECext
+address: 29 A1 00 00
+command: 9E 61 00 00
+# 
+name: VOL-
+type: parsed
+protocol: NECext
+address: 29 A1 00 00
+command: 9F 60 00 00
+#
+name: POWER
+type: parsed
+protocol: NEC
+address: 7A 00 00 00
+command: 1F 00 00 00
+#
+name: POWER
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 1C 00 00 00
+#
+name: MUTE
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 0B 00 00 00
+#
+name: VOL+
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 0F 00 00 00
+# 
+name: VOL-
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 05 00 00 00
+#
+name: VOL+
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 4617 4406 584 448 557 448 557 449 556 449 555 1430 580 1432 577 452 552 454 550 1460 549 1462 548 1462 549 1462 548 457 548 457 548 457 548 457 548 4463 548 457 548 457 548 457 548 458 548 1462 548 1462 548 1462 548 457 548 1463 547 1462 548 1462 548 458 547 458 548 458 548 458 547 1463 547 458 547 458 547 458 548 1463 547 55451 4606 4440 549 457 548 457 548 457 548 457 548 1462 548 1462 548 457 548 457 548 1462 548 1461 549 1462 548 1462 548 457 548 457 548 457 548 457 548 4462 548 457 548 457 548 457 548 457 548 1462 548 1462 548 1462 548 457 548 1462 548 1462 548 1462 547 457 548 458 547 458 547 458 547 1462 548 458 547 458 547 458 547 1462 548
+#
+name: VOL-
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 4614 4408 583 449 555 450 555 451 553 451 554 1432 577 1434 576 453 551 454 550 1460 549 1461 549 1461 549 1461 549 457 548 457 548 457 548 457 548 4461 548 457 548 457 548 457 548 457 548 457 548 457 548 457 548 1462 548 1461 549 1461 549 1461 548 457 548 1462 549 1461 549 1461 548 457 548 457 548 457 548 458 547 1462 548 55443 4606 4440 549 456 549 456 549 456 549 456 549 1461 549 1461 549 457 548 457 548 1461 549 1461 549 1461 549 1461 549 456 549 457 548 457 548 457 548 4461 549 456 549 457 548 457 548 457 548 457 548 457 548 457 548 1462 548 1461 549 1461 549 1461 548 457 548 1461 549 1461 549 1461 549 457 548 457 548 458 547 457 548 1462 548
+#
+name: POWER
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 4588 4435 556 477 556 449 555 450 555 451 554 1428 582 1429 581 451 553 452 552 1457 552 1458 551 1461 548 1463 547 458 547 458 547 458 547 458 547 4464 547 458 547 458 547 458 547 458 548 458 547 458 547 458 548 458 547 1463 547 1463 547 1464 546 459 547 1464 546 1464 546 1463 547 1464 546 459 546 459 546 459 546 1464 547 55456 4581 4468 546 458 547 458 547 458 547 458 547 1463 547 1463 547 458 547 459 547 1463 547 1464 546 1464 546 1464 547 459 546 459 546 459 546 459 547 4465 546 459 546 459 546 459 546 459 546 459 547 459 546 459 546 459 546 1464 546 1464 546 1465 546 460 545 1465 545 1465 545 1465 546 1465 546 460 545 460 546 460 545 1466 544
+#
+name: POWER
+type: parsed
+protocol: NECext
+address: 3F 5C 00 00
+command: 18 E7 00 00
+#
+name: VOL+
+type: parsed
+protocol: NECext
+address: 3F 5C 00 00
+command: 55 AA 00 00
+#
+name: VOL-
+type: parsed
+protocol: NECext
+address: 3F 5C 00 00
+command: 59 A6 00 00
+#
+name: MUTE
+type: parsed
+protocol: NECext
+address: 3F 5C 00 00
+command: 15 EA 00 00
+#
+name: MUTE
+type: parsed
+protocol: NECext
+address: 00 FB 00 00
+command: 1E E1 00 00
+# 
+name: POWER
+type: parsed
+protocol: NECext
+address: 00 FB 00 00
+command: 1D E2 00 00
+# 
+name: VOL-
+type: parsed
+protocol: NECext
+address: 00 FB 00 00
+command: 18 E7 00 00
+# 
+name: VOL+
+type: parsed
+protocol: NECext
+address: 00 FB 00 00
+command: 0A F5 00 00
+#
+name: VOL+
+type: parsed
+protocol: NECext
+address: 80 D9 00 00
+command: 8A 75 00 00
+#
+name: VOL-
+type: parsed
+protocol: NECext
+address: 80 D9 00 00
+command: 88 77 00 00
+#
+name: MUTE
+type: parsed
+protocol: NECext
+address: 80 D9 00 00
+command: 8C 73 00 00
+#
+name: POWER
+type: parsed
+protocol: NECext
+address: 78 0E 00 00
+command: 00 FF 00 00
+# 
+name: VOL+
+type: parsed
+protocol: NECext
+address: 78 0E 00 00
+command: 19 E6 00 00
+# 
+name: VOL-
+type: parsed
+protocol: NECext
+address: 78 0E 00 00
+command: 1C E3 00 00
+# 
+name: MUTE
+type: parsed
+protocol: NECext
+address: 78 0E 00 00
+command: 18 E7 00 00
+#
+name: VOL+
+type: parsed
+protocol: NEC
+address: 20 00 00 00
+command: 14 00 00 00
+#
+name: VOL-
+type: parsed
+protocol: NEC
+address: 20 00 00 00
+command: 10 00 00 00
+#
+# ON
+name: POWER
+type: parsed
+protocol: RC5
+address: 10 00 00 00
+command: 0E 00 00 00
+#
+name: VOL-
+type: parsed
+protocol: NECext
+address: 10 E7 00 00
+command: 0C F3 00 00
+#
+name: VOL+
+type: parsed
+protocol: NECext
+address: 10 E7 00 00
+command: 09 F6 00 00
+#
+name: POWER
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 3309 1906 410 1178 411 1177 412 416 435 445 406 448 414 440 411 1150 439 415 436 1178 411 1177 412 442 409 444 407 1181 408 419 432 1182 407 420 442 1146 433 448 414 440 411 442 409 444 407 446 416 438 413 441 410 443 408 419 432 1182 407 446 405 422 440 414 437 416 435 445 406 1181 408 446 405 448 414 440 411 442 409 418 433 446 416 438 413 1175 414 413 438 1176 413 414 437 443 408 419 432 421 441 413 438 42493 3308 3343 355 43011 3309 3316 382 43009 3310 3314 384 43007 3303 3347 361
+#
+name: VOL+
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 3307 1879 437 1177 412 1176 413 415 436 417 434 446 405 448 414 1174 415 412 439 1149 440 1147 442 438 413 440 411 1177 412 441 410 1178 411 442 409 1179 410 417 434 419 432 448 414 440 411 442 409 444 407 446 416 438 413 441 410 1151 438 415 436 444 407 446 416 412 439 414 437 1177 412 1176 413 414 437 416 435 1152 437 1177 412 416 435 444 407 446 416 1146 433 421 441 1173 406 422 440 413 438 442 409 444 407 40133 3308 3341 357 42862 3301 3347 361 42859 3304 3319 379
+#
+name: VOL-
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 3310 1876 440 1174 415 1173 405 422 440 414 437 443 408 445 406 1182 407 420 442 1173 406 1182 407 420 442 412 439 1175 414 440 411 1150 439 415 436 1152 437 416 435 419 432 447 415 440 411 442 409 418 433 420 442 438 413 440 411 1177 412 415 436 418 433 420 442 438 413 441 410 1151 438 1150 439 415 436 1178 411 1150 439 1149 440 414 437 417 434 445 406 1155 434 420 442 438 413 1175 414 413 438 442 409 444 407 39503 3303 3320 388 42857 3304 3319 379 42867 3305 3317 381
+#
+name: MUTE
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 3305 1907 409 1178 411 1177 412 442 409 418 433 447 415 439 412 1176 413 441 410 1177 412 1176 413 441 410 443 408 1180 409 445 406 1181 408 446 416 1172 406 448 413 440 411 442 409 445 406 447 414 439 412 442 409 444 407 447 414 1173 405 449 413 441 410 443 408 446 405 448 413 1174 415 440 411 442 409 1178 411 1177 412 1177 412 442 409 444 407 447 415 439 412 441 410 444 407 1180 409 445 406 448 414 440 411 41125 3303 3347 360 42906 3308 3315 382
+#
+name: MUTE
+type: parsed
+protocol: NECext
+address: BA A0 00 00
+command: 01 FE 00 00
 #
 name: POWER
 type: raw
@@ -998,30 +1420,6 @@ protocol: NECext
 address: EF 01 00 00
 command: 28 D7 00 00
 #
-name: POWER
-type: parsed
-protocol: NEC
-address: 00 00 00 00
-command: 40 00 00 00
-#
-name: VOL+
-type: parsed
-protocol: NEC
-address: 00 00 00 00
-command: 41 00 00 00
-#
-name: VOL-
-type: parsed
-protocol: NEC
-address: 00 00 00 00
-command: 45 00 00 00
-#
-name: MUTE
-type: parsed
-protocol: NEC
-address: 00 00 00 00
-command: 48 00 00 00
-#
 name: VOL+
 type: raw
 frequency: 38000
@@ -1189,24 +1587,6 @@ type: parsed
 protocol: RC5
 address: 14 00 00 00
 command: 10 00 00 00
-#
-name: MUTE
-type: parsed
-protocol: RC5
-address: 10 00 00 00
-command: 0D 00 00 00
-#
-name: VOL+
-type: parsed
-protocol: RC5
-address: 10 00 00 00
-command: 10 00 00 00
-#
-name: VOL-
-type: parsed
-protocol: RC5
-address: 10 00 00 00
-command: 11 00 00 00
 #
 name: POWER
 type: parsed
@@ -1450,24 +1830,6 @@ command: 57 00 00 00
 #
 name: VOL+
 type: parsed
-protocol: NECext
-address: 10 E7 00 00
-command: 06 F9 00 00
-#
-name: VOL-
-type: parsed
-protocol: NECext
-address: 10 E7 00 00
-command: 47 B8 00 00
-#
-name: MUTE
-type: parsed
-protocol: NECext
-address: 10 E7 00 00
-command: 41 BE 00 00
-#
-name: VOL+
-type: parsed
 protocol: NEC
 address: 4D 00 00 00
 command: 04 00 00 00
@@ -1538,3 +1900,141 @@ protocol: NECext
 address: 12 36 00 00
 command: 01 FE 00 00
 #
+# OFF
+name: POWER
+type: parsed
+protocol: RC5
+address: 10 00 00 00
+command: 0F 00 00 00
+#
+name: POWER
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 02 00 00 00
+#
+name: VOL+
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 0A 00 00 00
+#
+name: VOL-
+type: parsed
+protocol: NEC
+address: 00 00 00 00
+command: 0E 00 00 00
+#
+name: MUTE
+type: parsed
+protocol: Kaseikyo
+address: A0 02 20 00
+command: 20 03 00 00
+# 
+name: POWER
+type: parsed
+protocol: Kaseikyo
+address: AC 02 20 00
+command: D1 03 00 00
+# 
+name: VOL+
+type: parsed
+protocol: Kaseikyo
+address: A0 02 20 00
+command: 00 02 00 00
+# 
+name: VOL-
+type: parsed
+protocol: Kaseikyo
+address: A0 02 20 00
+command: 10 02 00 00
+# 
+name: POWER
+type: parsed
+protocol: SIRC
+address: 0F 00 00 00
+command: 15 00 00 00
+#
+name: Power
+type: parsed
+protocol: Samsung32
+address: 10 00 00 00
+command: 1E 00 00 00
+# 
+name: VOL+
+type: parsed
+protocol: Samsung32
+address: 10 00 00 00
+command: 17 00 00 00
+# 
+name: VOL-
+type: parsed
+protocol: Samsung32
+address: 10 00 00 00
+command: 16 00 00 00
+# 
+name: MUTE
+type: parsed
+protocol: Samsung32
+address: 10 00 00 00
+command: 1F 00 00 00
+# 
+name: POWER
+type: parsed
+protocol: Kaseikyo
+address: 51 54 32 01
+command: 03 00 00 00
+# 
+name: VOL+
+type: parsed
+protocol: Kaseikyo
+address: 51 54 32 01
+command: 04 00 00 00
+# 
+name: VOL-
+type: parsed
+protocol: Kaseikyo
+address: 51 54 32 01
+command: 05 00 00 00
+#
+name: MUTE
+type: parsed
+protocol: Kaseikyo
+address: 51 54 32 01
+command: 06 00 00 00
+# 
+name: POWER
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 4567 4454 549 481 522 481 523 480 498 506 498 1509 499 1509 523 480 499 505 523 1484 523 1484 523 1485 521 1487 520 484 519 485 519 485 519 471 519 4488 518 485 519 485 518 485 519 485 518 485 519 485 519 485 519 485 519 1489 519 1489 518 1489 518 485 519 1489 518 1490 518 1490 517 1490 518 486 518 486 518 486 518 1490 518
+# 
+name: VOL+
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 4571 4453 552 478 525 478 526 478 500 504 500 1507 501 1506 526 478 525 477 526 1481 526 1481 526 1482 524 1483 523 481 522 482 521 481 522 468 522 4484 521 482 521 482 521 482 522 481 522 1486 521 1486 521 1486 521 482 521 1486 522 1486 522 1486 522 482 522 482 522 482 522 482 522 1486 522 483 521 482 521 483 521 1487 521 55474 4547 4477 524 479 524 480 524 480 523 480 523 1485 523 1484 524 481 523 481 523 1485 523 1485 522 1485 523 1485 523 480 524 480 524 481 523 467 524 4484 523 481 523 481 523 481 523 481 523 1485 523 1485 523 1485 523 481 523 1485 523 1485 523 1485 523 481 523 481 523 481 523 481 523 1485 523 481 523 481 523 481 523 1486 522
+# 
+name: VOL-
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 4572 4453 552 456 548 479 524 479 500 504 500 1482 526 1482 551 478 526 478 525 1483 524 1484 523 1486 521 1487 521 483 521 483 521 483 521 470 520 4487 521 483 521 483 521 483 521 483 521 483 521 483 521 483 521 1488 520 1488 520 1488 520 1488 520 483 521 1488 520 1488 520 1488 520 483 521 483 521 483 521 483 521 1488 520 55457 4565 4483 521 483 521 483 521 483 521 483 520 1488 520 1487 521 483 521 483 520 1488 520 1488 520 1488 520 1488 520 483 520 484 520 484 520 470 521 4487 520 484 520 483 520 484 520 484 520 484 520 484 519 484 520 1488 520 1488 520 1488 519 1488 520 484 520 1488 520 1488 520 1488 520 484 520 484 520 484 520 484 520 1489 519
+# 
+name: MUTE
+type: raw
+frequency: 38000
+duty_cycle: 0.330000
+data: 4573 4451 552 477 527 478 526 477 526 478 501 1507 501 1506 502 502 527 477 526 1481 527 1481 527 1481 526 1482 525 479 524 480 523 481 523 468 523 4485 522 481 522 482 522 482 522 482 522 1486 522 482 521 482 522 482 522 1486 522 1486 522 1486 522 482 522 482 521 1487 521 1487 521 1487 521 482 521 483 521 483 521 1487 521 55462 4547 4474 524 478 525 479 524 480 523 480 523 1484 523 1484 523 480 523 480 523 1484 523 1484 524 1484 523 1485 522 480 523 480 524 480 523 467 523 4484 522 480 524 481 523 481 523 481 523 1485 523 481 522 481 523 481 523 1485 522 1485 523 1485 523 481 523 481 522 1485 522 1485 522 1485 523 481 522 481 522 481 523 1485 523
+# 
+name: VOL-
+type: parsed
+protocol: NECext
+address: 10 E7 00 00
+command: 49 B6 00 00
+# 
+name: VOL+
+type: parsed
+protocol: NECext
+address: 10 E7 00 00
+command: 05 FA 00 00

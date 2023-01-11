@@ -1,6 +1,7 @@
 # BadUSB scripts I've created, converted, or collected.
 
-Proper credit is always provided; I simply request the same.
+Proper credit is always provided; I simply request the same.<br>
+[Check out this nice list of keys you can use in your scripts!](https://gist.github.com/methanoliver/efebfe8f4008e167417d4ab96e5e3cac)
 
 ## Many more should work from my other repos: [O.MG Devices](https://github.com/UberGuidoZ/Hak5-OMG-Payloads) and [Hak5](https://github.com/UberGuidoZ/Hak5-USBRubberducky-Payloads)
 
@@ -15,6 +16,12 @@ Don't forget to check out some other friends too! [I-Am-Jakoby](https://github.c
 Thirsty for more? Here's some light reading (lol) about the [USB HID spec](https://usb.org/sites/default/files/hut1_3_0.pdf).
 
 -----
+
+## Donation Information
+
+Nothing is ever expected for the hoarding of digital files, creations I have made, or the people I may have helped.
+
+## Ordering from Lab401? [USE THIS LINK FOR 5% OFF!](https://lab401.com/r?id=vsmgoc) (Or code `UberGuidoZ` at checkout.)
 
 I've had so many asking for me to add this.<br>
 ![Flipper_Blush](https://user-images.githubusercontent.com/57457139/183561666-4424a3cc-679b-4016-a368-24f7e7ad0a88.jpg) ![Flipper_Love](https://user-images.githubusercontent.com/57457139/183561692-381d37bd-264f-4c88-8877-e58d60d9be6e.jpg)

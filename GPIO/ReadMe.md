@@ -1,7 +1,6 @@
 # Documenting adventures with the GPIO...
 
 Official [GPIO layout](https://miro.com/app/board/uXjVO_LaYYI=/) created by [Aleksandr Kutuzov](https://discord.com/channels/740930220399525928/765282833744265246/993107060172542012). Official documentation [is here](https://docs.flipperzero.one/gpio-and-modules)!<br>
-Check out some unofficial boards by [DrB0rk](https://github.com/DrB0rk/Flipper-Zero-Boards) and an extender by [Speexvocon](https://github.com/Speexvocon/FlipperZeroHeaderExtender)!
 
 # Sentry Safe plugin pinout
 
@@ -50,7 +49,8 @@ NRF24: 9 or 10 (VCC) to FZ 9 (3v3)
 
 ![ESP32-WROOM](https://user-images.githubusercontent.com/57457139/182290985-54d00e1e-dd3f-4efd-a66f-4d6b8e8c2ed2.jpg)
 
-NOTE: Use `old_hardware.bin` if flashing Marauder onto the ESP32-WROOM (thanks wyldgoat!)
+NOTE: Use `old_hardware.bin` if flashing Marauder onto the ESP32-WROOM (thanks wyldgoat!)<br>
+[Easy Flasher (Windows / Linux / Mac) available here](https://github.com/UberGuidoZ/Flipper/tree/main/Wifi_DevBoard/FZ_Marauder_Flasher/ESP32-WROOM).
 
 ![wyldgoat](https://user-images.githubusercontent.com/57457139/182552144-46abf993-160e-42e2-8dde-466da146b16d.png)<br>
 ![bobo_dudu](https://user-images.githubusercontent.com/57457139/182552153-9c50f817-8b8c-4d31-8d62-3fe8fca7a48b.png)
@@ -97,6 +97,22 @@ Switch between UART Pins 13/14 and 15/16 setting in FlipperZero<br>
 
 A visual pinout can be seen in [this PDF](https://github.com/UberGuidoZ/Flipper/blob/main/GPIO/ESP8266_WIFI_Schematic.pdf), too.
 
+# ESP32-S2 WROVER
+
+![ESP32-S2WROVER](https://user-images.githubusercontent.com/57457139/201228294-d5565fff-99ae-44ed-8076-36b0fc8d39c9.jpg)
+
+## ESP32-S2 WROVER Pinout (thanks max_fpv_austria!)
+
+ESP32: 44 (RX0) -> FZ: 13 or 15 (these are TX pins)<br>
+ESP32: 43 (TX0) -> FZ: 14 or 16 (these are RX pins)<br>
+ESP32: GND -> FZ: 8 or 11 or 18 (GND)<br>
+ESP32: 3.3V -> FZ: 9 (3.3V)<br>
+
+Switch between UART Pins 13/14 and 15/16 setting in FlipperZero<br>
+`(GPIO -> USB-UART Bridge -> LEFT -> UART Pins)`
+
+Picture includes wiring pinout for the SD card mod too!
+
 # ESP32-CAM (Camera)
 
 ![ESP32-CAM](https://user-images.githubusercontent.com/57457139/182571081-81df66a8-a536-426f-9ee0-ee277da5ef0a.png)
@@ -112,7 +128,7 @@ CAM32: 4 (3.3V) -> FZ: 9 (3.3V) ***OR*** ESP32: 5V -> FZ: 1 (5V)
 
 ![WIFI_LoRa_ESP32 to F0](https://user-images.githubusercontent.com/57457139/182568878-aef3ff21-2748-4ba3-9cdd-bc2f5d33b26d.jpg)
 
-## LoRa ESP32 Wifi Pinout to Flipper Zero (PENDING VERIFICATION)
+## LoRa ESP32 Wifi Pinout to Flipper Zero
 LoRa32: 1 (RX0) -> FZ: 13 or 15 (these are TX pins)<br>
 LoRa32: 2 (TX0) -> FZ: 14 or 16 (these are RX pins)<br>
 LoRa32: 3 (GND) -> FZ: 8 or 11 or 18 (GND)<br>
@@ -142,8 +158,6 @@ PiZero: 8 (UART0_TXD) -> FZ: 14 (RX)
 PiZero: 10 (UART0_RXD) -> FZ: 13 (TX)
 ```
 
-# Some other accessories to try with Flipper (Code needed!)
-
 ## HC-SR04 Ultrasonic Distance Sensor
 
 Plugin by Sanqui: https://github.com/Sanqui/flipperzero-firmware/blob/hc_sr04/applications/hc_sr04/hc_sr04.c
@@ -159,7 +173,71 @@ HC-SR04: 4 (5V)  -> FZ: 1 (5V)
 Switch between UART Pins 13/14 and 15/16 setting in:
 Flipper -> GPIO -> USB-UART Bridge -> LEFT -> UART Pins
 ```
+![HC-SR04](https://user-images.githubusercontent.com/57457139/208268156-05021579-5410-44bc-a705-99fc97b0d046.png)
+
 -----
+
+## NMEA 0183 GPS
+https://github.com/ezod/flipperzero-gps
+```
+GPIO pins 9 (3.3V), 11 (GND), 13 (TX), and 14 (RX)
+```
+![GPS NMEA 0183](https://github.com/ezod/flipperzero-gps/raw/main/wiring.png)
+
+-----
+
+## i2c Tools (by NaejEL) 
+```
+C0 -> SCL / C1 -> SDA / GND -> GND | 3v3 logic levels only!
+```
+https://github.com/NaejEL/flipperzero-i2ctools
+
+-----
+
+## HTU21D / SI7021 Temperature Sensor
+![HTU21D](https://user-images.githubusercontent.com/57457139/208267976-6709577e-f15d-4ec0-928d-dcff9b3389be.png)
+```
+GPIO pins 9 (3.3V), 11 (GND), 15 (sda), and 16 (scl)
+```
+https://github.com/Mywk/FlipperTemperatureSensor
+![Temperature Sensor - HTU21D / SI7021](https://github.com/Mywk/FlipperTemperatureSensor/raw/master/images/Flipper.png)
+
+-----
+
+## AM2320/AM2321 Temp. Sensor
+```
+GPIO pins 9 (3.3V), 11 (GND), 15 (sda), and 16 (scl)
+```
+https://github.com/xMasterX/AM2320_Flipper_Plugin
+![Connection](https://user-images.githubusercontent.com/10697207/199586577-5c9cf516-2096-4d70-9e2f-1f9458a68d65.jpg)
+
+-----
+
+## DHT11/22 Temp. Sensor
+```
+VCC (none, +, VCC, red wire)	1 (5V) or 9 (3V3)
+GND (-, GND, black wire)	8, 18 (GND)
+DATA (OUT, S, yellow wire)	2-7, 10, 12-17 (to choose from)
+```
+https://github.com/quen0n/FipperZero-DHT-Monitor
+-----
+# Custom PCB's
+## Here's some repo's with designs for custom PCB's you can order or build using a prototype board.
+
+https://github.com/DrB0rk/Flipper-Zero-Boards
+https://github.com/Speexvocon/FlipperZeroHeaderExtender
+https://github.com/krolchonok/flipper-board
+https://github.com/AWOK559/Flipper_Zero_Boards
+https://github.com/TheOtherLonestar/RS-232-UART-Flipper
+https://github.com/oleksiikutuzov/flipperzero-flasher-board
+
+-----
+
+## Donation Information
+
+Nothing is ever expected for the hoarding of digital files, creations I have made, or the people I may have helped.
+
+## Ordering from Lab401? [USE THIS LINK FOR 5% OFF!](https://lab401.com/r?id=vsmgoc) (Or code `UberGuidoZ` at checkout.)
 
 I've had so many asking for me to add this.<br>
 ![Flipper_Blush](https://user-images.githubusercontent.com/57457139/183561666-4424a3cc-679b-4016-a368-24f7e7ad0a88.jpg) ![Flipper_Love](https://user-images.githubusercontent.com/57457139/183561692-381d37bd-264f-4c88-8877-e58d60d9be6e.jpg)

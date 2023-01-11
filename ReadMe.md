@@ -1,9 +1,17 @@
 ## Playground (and dump) of stuff I made, modified, researched, or found for the Flipper Zero.
 **Looking for Infrared (IR) codes? Head over to [the IRDB](https://github.com/UberGuidoZ/Flipper-IRDB)! Just want to download part of any repo? [Try over here](https://uberguidoz.github.io/DownGit/)!**
 
-If you're new to github in general, I have a _very_ rough/basic guide over on the Official Discord [in this thread](https://discord.com/channels/740930220399525928/995390495415095296). Link not available? [Try this first](https://discord.com/invite/flipper)!
+## If you're new to github in general, check out [this great guide](https://github.com/wrenchathome/flipperfiles/blob/main/_Guides/How2Flipper.pdf) from Wr3nch!
+
+Other great spots for help can be found at the [Official Discord](https://discord.com/invite/flipper), [Official Docs](https://docs.flipperzero.one/), or the [Official Forum](https://forum.flipperzero.one/).
 
 -----
+
+## Donation Information
+
+Nothing is ever expected for the hoarding of digital files, creations I have made, or the people I may have helped.
+
+## Ordering from Lab401? [USE THIS LINK FOR 5% OFF!](https://lab401.com/r?id=vsmgoc) (Or code `UberGuidoZ` at checkout.)
 
 I've had so many asking for me to add this.<br>
 ![Flipper_Blush](https://user-images.githubusercontent.com/57457139/183561666-4424a3cc-679b-4016-a368-24f7e7ad0a88.jpg) ![Flipper_Love](https://user-images.githubusercontent.com/57457139/183561692-381d37bd-264f-4c88-8877-e58d60d9be6e.jpg)

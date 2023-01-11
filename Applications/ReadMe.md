@@ -1,8 +1,10 @@
 # Flipper Application Packages (FAPs)
 
+## [(Some links to authors and descriptions here)](https://github.com/UberGuidoZ/Flipper/tree/main/Applications/Custom%20(UL%2C%20RM%2C%20XFW)#readme)
+
 The long-awaited addition of loading plugins (applications) from the SD card is here thanks to some hard work by the Official Flipper devteam. Anna/hedger released a FAP pack with some pre-built plugins, ready to go. Check out the [Official documentation](https://github.com/flipperdevices/flipperzero-firmware/blob/dev/documentation/AppsOnSDCard.md) for more info.
 
-And thanks to some further hard work from [xMasterX](https://github.com/xMasterX) of [Unleashed](https://github.com/Eng1n33r/flipperzero-firmware), we now have MORE working applications!
+And thanks to some further hard work from [xMasterX](https://github.com/xMasterX) of [Unleashed](https://github.com/DarkFlippers/unleashed-firmware), we now have MORE working applications!
 
 Since the FAP file needs to be compiled to work with the specific firmware you have, I've separated the FAPs into their respective folders.<br>
 **NOTE: Files are interchangeable between RM and UL! They are not interchangeable with Official firmware due to API differences.**
@@ -26,6 +28,36 @@ Now simply navigate to the application you'd like to load and center click it!
 To exit and/or load something else, simply use the BACK button.
 
 -----
+# Building applications
+## Here are some resources on getting started creating and building FAPS.
+
+### Official documentation
+https://github.com/flipperdevices/flipperzero-firmware/blob/dev/documentation/AppsOnSDCard.md
+
+### Dev documentation by at-manos
+https://flipper.atmanos.com/docs/category/overview
+
+### Flipper plugin tutorial
+By DroomOne: https://github.com/DroomOne/Flipper-Plugin-Tutorial
+
+By giolaq: https://blog.giolaq.dev/hello-world-of-flipper-zero <br>
+The repo that goes with giolaq's blog: https://github.com/giolaq/helloflipper
+
+By csBlueChip: https://github.com/csBlueChip/FlipperZero_plugin_howto
+
+## Hello world examples
+By zmactep: https://github.com/zmactep/flipperzero-hello-world <br>
+By ASoldo: https://github.com/ASoldo/hello_world <br>
+By mervburger: https://github.com/mervburger/flipper_helloworld <br>
+A rust implimentation by baakeydow: https://github.com/baakeydow/flipper0-rust-hello-world <br>
+
+-----
+
+## Donation Information
+
+Nothing is ever expected for the hoarding of digital files, creations I have made, or the people I may have helped.
+
+## Ordering from Lab401? [USE THIS LINK FOR 5% OFF!](https://lab401.com/r?id=vsmgoc) (Or code `UberGuidoZ` at checkout.)
 
 I've had so many asking for me to add this.<br>
 ![Flipper_Blush](https://user-images.githubusercontent.com/57457139/183561666-4424a3cc-679b-4016-a368-24f7e7ad0a88.jpg) ![Flipper_Love](https://user-images.githubusercontent.com/57457139/183561692-381d37bd-264f-4c88-8877-e58d60d9be6e.jpg)
